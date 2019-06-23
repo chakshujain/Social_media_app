@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/register"
+    tools:context=".SetupActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setup_profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="159dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="2dp" />
+    <EditText
+        android:id="@+id/setup_username"
+        android:layout_below="@+id/setup_profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/username"
+        android:textSize="30sp"
+        android:ems="10"
+        android:hint="Username"
+        android:layout_marginTop="40dp"
+        />
+    <EditText
+        android:id="@+id/setup_fullname"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/setup_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/name"
+        android:ems="10"
+        android:hint="Full name"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/setup_country"
+        android:layout_below="@+id/setup_fullname"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/country"
+        android:ems="10"
+        android:hint="Country"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/setup_information_button"
+        android:layout_below="@+id/setup_country"
+        android:layout_centerHorizontal="true"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttons"
+        android:text="Save"
+        android:textSize="22dp"
+        android:textColor="@color/cardview_light_background"
+        />
+
+</RelativeLayout>

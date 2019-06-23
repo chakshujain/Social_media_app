@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_background"
+    tools:context=".PostActivity">
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/update_post_page_toolbar"></include>
+    <ScrollView
+        android:layout_below="@+id/update_post_page_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/scrollable_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/select_post_image"
+        android:layout_below="@+id/update_post_page_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/select_image"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/post_description"
+        android:scrollbars="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/select_post_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/inputs"
+        android:hint="Write about your post here"
+        android:padding="10dp"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/update_post_button"
+        android:layout_below="@+id/post_description"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttons"
+        android:text="Update Post"
+        android:textColor="@color/cardview_light_background"
+        android:padding="10dp"
+        android:textSize="25sp" />
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

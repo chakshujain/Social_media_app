@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Social Media</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
